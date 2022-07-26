@@ -324,6 +324,11 @@
                 color: #fff;
             }
 
+            table>tbody>*{
+                text-align : center;
+                margin:auto;
+            }
+
             .fa-trash-can{
                 color:red;
                 border-radius: 4px;
