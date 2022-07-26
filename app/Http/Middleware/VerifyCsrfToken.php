@@ -12,6 +12,10 @@ class VerifyCsrfToken extends Middleware
      * @var array<int, string>
      */
     protected $except = [
-        //
+        'tasks',
+        'updatetasks',
+        'deletetasks',
+        'trueendtask',
+        'falseendtask'
     ];
 }
