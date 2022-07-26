@@ -25,11 +25,11 @@
                                     <input type="text" name="inputTextModal" class="form-control" id="inputTextModal" placeholder="Tâche">
                                 </div>
                             </div>
-                            <span id="InputTextModalError" class="text-danger"></span>
                             <div class="col-md-2">
                                 <button type="" id="ModifTask" class="btn btn-primary mb-2">Modifier</button>
                             </div>
                         </div>
+                        <span id="InputTextModalError" class="text-danger"></span>
                     </div>
                 </div>
             </div>
@@ -164,7 +164,7 @@
                             location.reload(true);
                         },
                         error : function(error){
-                            $('#inputTextModal').html(error.responseJSON.errors.description);
+                            $('#InputTextModalError').html(error.responseJSON.errors.description);
                         }
                     });
                 })
