@@ -80,6 +80,9 @@ class TaskController extends Controller
      */
     public function update(Request $request)
     {
+        $this->validate($request, [
+            'description'=> 'required|min:5|max:255'
+        ]);
         $id = $request->id;
         DB::table('tasks')->where('id',$id)->update(['name' => $request->description]);
 
