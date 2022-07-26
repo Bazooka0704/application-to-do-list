@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container3">
             To Do List Appli
         </div>
         @if(count($errors) > 0)
@@ -64,55 +64,57 @@
             </form>
             <br>
             <br>
-            <div class="row">
-                @if(count($tasks) > 0)
-                    <table class="table align-middle mb-0 bg-white">
-                        <thead class="bg-light" style=" font-weight:bold; color: orange">
-                            <th>Tâche</th>
-                            <th>Description</th>
-                            <th>Modifier</th>
-                            <th>Supprimer</th>
-                            <th>Terminée</th>
-                        </thead>
-                        <tbody>
-                        @foreach ($tasks as $task)
-                            <tr>
-                                <th>{{ $task->id }}</th>
-                                <td id="Name{{ $task->id }}" value="{{ $task->name }}">{{ $task->name }}</td>
-                                @if($task->end_task == 'Oui')
-                                    <td>
-                                        <a  class="editRow styleList" id="fa-pen{{ $task->id }}"  data-id="{{ $task->id }}">
-                                            <i class="fa-solid fa-pen-to-square"></i>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a  class="delRow styleList" id="fa-trash{{ $task->id }}" data-id="{{ $task->id }}">
-                                            <i class="fa-solid fa-trash-can"></i>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <input class="form-check-input checkEnd" type="checkbox" value="" data-id="{{ $task->id }}" checked></input>
-                                    </td>
-                                @else
-                                    <td>
-                                        <a  class="editRow" id="fa-pen{{ $task->id }}"  data-id="{{ $task->id }}">
-                                            <i class="fa-solid fa-pen-to-square"></i>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a  class="delRow" id="fa-trash{{ $task->id }}"  data-id="{{ $task->id }}">
-                                            <i class="fa-solid fa-trash-can"></i>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <input class="form-check-input checkEnd" type="checkbox" value="" data-id="{{ $task->id }}"></input>
-                                    </td>
-                                @endif
-                            </tr>
-                        @endforeach
-                        </tbody>
-                    </table>
-                @endif
+            <div class="container">
+                <div class="row">
+                    @if(count($tasks) > 0)
+                        <table class="table align-middle mb-0 bg-white">
+                            <thead class="bg-light" style=" font-weight:bold; color: orange">
+                                <th>Tâche</th>
+                                <th>Description</th>
+                                <th>Modifier</th>
+                                <th>Supprimer</th>
+                                <th>Terminée</th>
+                            </thead>
+                            <tbody>
+                            @foreach ($tasks as $task)
+                                <tr>
+                                    <th>{{ $task->id }}</th>
+                                    <td id="Name{{ $task->id }}" value="{{ $task->name }}">{{ $task->name }}</td>
+                                    @if($task->end_task == 'Oui')
+                                        <td>
+                                            <a  class="editRow styleList" id="fa-pen{{ $task->id }}"  data-id="{{ $task->id }}">
+                                                <i class="fa-solid fa-pen-to-square"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a  class="delRow styleList" id="fa-trash{{ $task->id }}" data-id="{{ $task->id }}">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <input class="form-check-input checkEnd" type="checkbox" value="" data-id="{{ $task->id }}" checked></input>
+                                        </td>
+                                    @else
+                                        <td>
+                                            <a  class="editRow" id="fa-pen{{ $task->id }}"  data-id="{{ $task->id }}">
+                                                <i class="fa-solid fa-pen-to-square"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a  class="delRow" id="fa-trash{{ $task->id }}"  data-id="{{ $task->id }}">
+                                                <i class="fa-solid fa-trash-can"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <input class="form-check-input checkEnd" type="checkbox" value="" data-id="{{ $task->id }}"></input>
+                                        </td>
+                                    @endif
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    @endif
+                </div>
             </div>
             {!! $tasks->links() !!}
         </div>
@@ -264,7 +266,7 @@
                 overflow:hidden;
             }
 
-            .container{
+            .container3{
                 width: 60%;
                 max-width: 300px !important;
                 margin: 0 auto;
