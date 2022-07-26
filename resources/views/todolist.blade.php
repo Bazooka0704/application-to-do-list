@@ -61,10 +61,8 @@
                         <button type="submit" class="btn btn-primary mb-2">Ajouter</button>
                     </div>
                 </div>
-            </form>
-            <br>
-            <br>
-            <div class="container" style="width: 100%">
+                <br>
+                <br>
                 <div class="row">
                     @if(count($tasks) > 0)
                         <table class="table align-middle mb-0 bg-white" style="width: 60%">
@@ -115,7 +113,7 @@
                         </table>
                     @endif
                 </div>
-            </div>
+            </form>
             {!! $tasks->links() !!}
         </div>
         @stack('scripts')
@@ -263,7 +261,7 @@
                 font-size:15px;
                 padding: 20px 0 0 0;
                 background: #fff;
-                overflow:hidden;
+                overflow:auto;
             }
 
             .container3{
