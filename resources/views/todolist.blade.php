@@ -294,6 +294,20 @@
                 text-align: center;
             }
 
+            .container{
+                width: 80%;
+                max-width: 700px !important;
+                margin: 50px auto;
+                background: #fff;
+                border: 1px solid #cccccc;
+                padding: 20px;
+                border-radius: 4px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                font-weight: bold;
+                font-size: 20px;
+                text-align: center;
+            }
+
             .alert{
                 width: 60%;
                 max-width: 600px !important;
