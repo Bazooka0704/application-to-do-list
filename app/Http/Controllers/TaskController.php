@@ -43,6 +43,7 @@ class TaskController extends Controller
 
         $task = new Task;
         $task->name = $request->inputText;
+        $task->end_task = "Non";
         $task->save();
 
         return redirect()->route('tasks.index');
