@@ -62,8 +62,6 @@
                     </div>
                 </div>
             </form>
-            <br>
-            <br>
         </div>
                 @if(count($tasks) > 0)
                     <table class="table align-middle mb-0 bg-white" style="margin:auto; max-width:600px; width:80%">
