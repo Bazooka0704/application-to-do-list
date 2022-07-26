@@ -14,12 +14,9 @@ use App\Http\Controllers\TaskController;
 |
 */
 
-Route::get('/', function () {
-    return view('todolist');
-});
+Route::get('/', [TaskController::class,'index'])->name('tasks.index');
 
 Route::post('tasks', [TaskController::class,'store'])->name('tasks.store');
-Route::get('addtask', [TaskController::class,'index'])->name('tasks.index');
 Route::post('updatetasks', [TaskController::class,'update'])->name('tasks.update');
 Route::post('deletetasks', [TaskController::class,'destroy'])->name('tasks.destroy');
 
