@@ -324,7 +324,7 @@
                 color: #fff;
             }
 
-            table>tbody>*{
+            table>tbody>tr>*{
                 text-align : center;
                 margin:auto;
             }
