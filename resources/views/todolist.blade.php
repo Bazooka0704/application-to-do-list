@@ -26,7 +26,7 @@
                                 </div>
                             </div>
                             <div class="col-md-2">
-                                <button type="" id="ModifTask" class="btn btn-primary mb-2">Modfier</button>
+                                <button type="" id="ModifTask" class="btn btn-primary mb-2">Modifier</button>
                             </div>
                         </div>
                     </div>
@@ -223,6 +223,7 @@
                         url:"{{ route('tasks.endtrue') }}",
                         type : "POST",
                         success : function(response){
+                            alert("Yann");
                             swal("Tâche No"+id+" terminée !!", {
                                 icon: "success",
                                 buttons : false,
