@@ -113,7 +113,7 @@ class TaskController extends Controller
     {
         $id = $request->id;
 
-        DB::table('tasks')->where('id',$id)->update(['end_task' => null]);
+        DB::table('tasks')->where('id',$id)->update(['end_task' => "Non"]);
 
         return response()->json();
     }
