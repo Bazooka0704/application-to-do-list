@@ -66,7 +66,7 @@
             <br>
         </div>
                 @if(count($tasks) > 0)
-                    <table class="table align-middle mb-0 bg-white" style="margin:auto; max-width:600px">
+                    <table class="table align-middle mb-0 bg-white" style="margin:auto; max-width:600px; width:80%">
                         <thead class="bg-light" style=" font-weight:bold; color: orange">
                             <th>Tâche</th>
                             <th>Description</th>
