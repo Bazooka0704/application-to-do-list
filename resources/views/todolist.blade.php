@@ -305,6 +305,9 @@
                 box-shadow: 0 2px 4px rgba(0,0,0,0.1);
                 font-size: 20px;
             }
+            table{
+                width: 60% !important;
+            }
 
             table>thead>*{
                 background-color: rgb(121, 121, 250);
