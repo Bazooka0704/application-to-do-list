@@ -65,10 +65,8 @@
             <br>
             <br>
         </div>
-        <div class="container" style="width: 100%">
-            <div class="row">
                 @if(count($tasks) > 0)
-                    <table class="table align-middle mb-0 bg-white" style="width: 60%">
+                    <table class="table align-middle mb-0 bg-white">
                         <thead class="bg-light" style=" font-weight:bold; color: orange">
                             <th>Tâche</th>
                             <th>Description</th>
@@ -115,8 +113,6 @@
                         </tbody>
                     </table>
                 @endif
-            </div>
-        </div>
         {!! $tasks->links() !!}
         @stack('scripts')
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
