@@ -257,7 +257,7 @@
         </script>
         <style>
             body{
-                font-family: cursive;
+                font-family:sans-serif;
                 font-size:15px;
                 padding: 20px 0 0 0;
                 background: #fff;
