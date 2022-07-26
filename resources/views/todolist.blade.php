@@ -223,7 +223,6 @@
                         url:"{{ route('tasks.endtrue') }}",
                         type : "POST",
                         success : function(response){
-                            alert("Yann");
                             swal("Tâche No"+id+" terminée !!", {
                                 icon: "success",
                                 buttons : false,
