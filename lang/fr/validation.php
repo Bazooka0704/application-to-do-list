@@ -165,6 +165,7 @@ return [
                     'end' => 'Date et Heure de fin',
                     'nom_client' => 'Nom Client',
                     'prenoms_client' => 'Prénoms Client',
+                    'description' => 'champ tache',
                     'numero_compte' => 'Numero de compte'],
 
 ];
