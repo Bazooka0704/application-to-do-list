@@ -4,7 +4,7 @@
 /public/storage
 /storage/*.key
 /vendor
-/config
+/config/database
 .env
 .env.example
 .env.backup
